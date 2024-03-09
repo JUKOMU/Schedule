@@ -58,6 +58,7 @@ def preview():
     user_id = request.args.get('userId')
     time_list = eval(request.args.get('data'))
     data = {"name": name, "userId": user_id, "timeList": time_list}
+
     return render_template("preview.html", data=data)
 
 
